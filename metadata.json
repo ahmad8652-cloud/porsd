@@ -1,0 +1,6 @@
+{
+  "name": "Live Medal Standing POR SD Benjeng 2026",
+  "description": "Papan informasi digital klasemen perolehan medali Pekan Olahraga SD se-Kecamatan Benjeng 2026 secara real-time dan interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

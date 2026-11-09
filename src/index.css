@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-scoreboard {
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
+
+/* Custom background patterns */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(56, 189, 248, 0.12) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.bg-scoreboard-lines {
+  background-image: linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Metallic text gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF7AD 0%, #FFAE34 50%, #ED8A00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-bronze-gradient {
+  background: linear-gradient(135deg, #FFEDD5 0%, #FB923C 50%, #C2410C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Print styles for official competition reports */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break {
+    page-break-after: always;
+  }
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+  th, td {
+    border: 1px solid #cbd5e1 !important;
+    color: black !important;
+  }
+}
